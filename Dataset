@@ -1,0 +1,45 @@
+1.Customer queries (questions, issues, complaints)
+
+Support agent responses (solutions, replies, instructions)
+
+Conversational context (multi-turn dialogues, follow-ups)
+
+Domain-specific FAQs and knowledge bases
+
+Here are some suitable datasets (free and paid) you can explore:
+
+General Customer Support Datasets:
+Customer Support on Twitter Dataset (by Kaggle)
+
+Contains customer support conversations from Twitter (brands like Apple, Amazon, etc.).
+
+Link: https://www.kaggle.com/thoughtvector/customer-support-on-twitter
+
+2.DSTC (Dialog State Tracking Challenge) Datasets
+
+Multi-turn dialogues for different domains, including customer service.
+
+Link: https://www.microsoft.com/en-us/research/project/dialog-state-tracking-challenge/
+
+3.MultiWOZ Dataset
+
+Large-scale multi-domain task-oriented dialogue dataset (hotel booking, restaurant, etc.).
+
+Link: https://www.cambridge.org/datasets/multiwoz
+
+4.Ubuntu Dialogue Corpus
+
+Technical support dialogues in the Ubuntu domain (can adapt for tech-related support bots).
+
+Link: https://github.com/rkadlec/ubuntu-ranking-dataset-creator
+
+5.Microsoft Customer Support Dataset (from Azure)
+
+Contains anonymized customer support transcripts.
+
+6.If your chatbot is domain-specific, you may also need:
+Your company’s historical support tickets
+
+Knowledge base articles and FAQs
+
+Chat transcripts from live chat tools (e.g., Zendesk, Intercom)
