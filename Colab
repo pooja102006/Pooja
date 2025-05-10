@@ -1,0 +1,30 @@
+from chatterbot import ChatBot
+from chatterbot.trainers import ChatterBotCorpusTrainer
+
+# Create a new chatbot instance
+customer_support_bot = ChatBot(
+    'SupportBot',
+    storage_adapter='chatterbot.storage.SQLStorageAdapter',
+    logic_adapters=[
+        'chatterbot.logic.BestMatch',
+        'chatterbot.logic.MathematicalEvaluation'
+    ],
+    database_uri='sqlite:///database.sqlite3'
+)
+
+# Training the chatbot on English corpus (can add more data later)
+trainer = ChatterBotCorpusTrainer(customer_support_bot)
+trainer.train('chatterbot.corpus.english')
+
+def chat():
+    print("Hello! I'm SupportBot. How can I help you today? (Type 'exit' to end)")
+    while True:
+        user_input = input("You: ")
+        if user_input.lower() in ['exit', 'quit', 'bye']:
+            print("SupportBot: Thank you! Have a great day!")
+            break
+        response = customer_support_bot.get_response(user_input)
+        print(f"SupportBot: {response}")
+
+if __name__ == '__main__':
+    chat()
